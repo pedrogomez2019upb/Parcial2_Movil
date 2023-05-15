@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.parcial2">
+    <!-- The INTERNET permission is required for development. Specifically,
+         the Flutter tool needs it to communicate with the running application
+         to allow setting breakpoints, to provide hot reload, etc.
+    -->
+
+    <!-- Required permissions for Firebase Cloud Messaging -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Optional permission for displaying notifications in the background -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Required for receiving FCM messages -->
+    <permission android:name="com.example.notificaciones_push.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.example.notificaciones_push.permission.C2D_MESSAGE" />
+</manifest>
